@@ -89,7 +89,7 @@ class MaintenanceLogController extends Controller
 
         event(new MaintenanceLogCollectedEvent($data));
 
-        return customResponse()
+        return simpleResponse()
             ->data($data)
             ->message('Successfully collected record.')
             ->success()
@@ -109,7 +109,7 @@ class MaintenanceLogController extends Controller
     {
         event(new MaintenanceLogShownEvent($log));
 
-        return customResponse()
+        return simpleResponse()
             ->data($log)
             ->message('Successfully collected record.')
             ->success()
@@ -131,7 +131,7 @@ class MaintenanceLogController extends Controller
 
         event(new MaintenanceLogUpdatedEvent($log));
 
-        return customResponse()
+        return simpleResponse()
             ->data($log)
             ->message('Successfully updated record.')
             ->success()
@@ -155,7 +155,7 @@ class MaintenanceLogController extends Controller
 
         event(new MaintenanceLogArchivedEvent($log));
 
-        return customResponse()
+        return simpleResponse()
             ->data($log)
             ->message('Successfully archived record.')
             ->success()
@@ -177,7 +177,7 @@ class MaintenanceLogController extends Controller
 
         event(new MaintenanceLogRestoredEvent($data));
 
-        return customResponse()
+        return simpleResponse()
             ->data($data)
             ->message('Successfully restored record.')
             ->success()

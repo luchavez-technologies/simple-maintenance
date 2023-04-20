@@ -27,7 +27,7 @@ class ToggleMaintenanceModeController extends Controller
     {
         $log = $repository->toggleMaintenanceMode($request);
 
-        return customResponse()
+        return simpleResponse()
             ->data($log)
             ->message('Successfully collected record.')
             ->success()
