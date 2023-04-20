@@ -37,7 +37,7 @@ class GetMaintenanceModeStatusController extends Controller
             'last_activity' => $last_activity,
         ];
 
-        return customResponse()
+        return simpleResponse()
             ->data($data)
             ->message('Successfully fetched maintenance status.')
             ->success()

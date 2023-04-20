@@ -23,7 +23,7 @@ class GetMaintenanceModeStatusesController extends Controller
      */
     public function __invoke(Request $request): JsonResponse
     {
-        return customResponse()
+        return simpleResponse()
             ->data(simpleMaintenance()->getStatuses())
             ->message('Successfully collected record.')
             ->success()

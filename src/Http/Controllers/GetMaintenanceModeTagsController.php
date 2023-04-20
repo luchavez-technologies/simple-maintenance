@@ -26,7 +26,7 @@ class GetMaintenanceModeTagsController extends Controller
     {
         $data = Tag::getWithType('maintenance-logs')->all();
 
-        return customResponse()
+        return simpleResponse()
             ->data($data)
             ->message('Successfully collected record.')
             ->success()
