@@ -1,6 +1,6 @@
 {
     "name": "luchavez/simple-maintenance",
-    "description": "Maintenance logs for Laravel",
+    "description": "Maintenance logs for Laravel 8|9|10",
     "license": "MIT",
     "authors": [
         {
