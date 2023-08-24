@@ -43,8 +43,8 @@ If you discover any security related issues, please email jamescarloluchavez@gma
 
 MIT. Please see the [license file](license.md) for more information.
 
-[ico-version]: https://img.shields.io/packagist/v/luchavez/simple-maintenance.svg?style=flat-square
-[ico-downloads]: https://img.shields.io/packagist/dt/luchavez/simple-maintenance.svg?style=flat-square
+[ico-version]: https://img.shields.io/packagist/v/luchavez/simple-maintenance.svg
+[ico-downloads]: https://img.shields.io/packagist/dt/luchavez/simple-maintenance.svg
 [ico-stars]: https://img.shields.io/github/stars/luchavez-technologies/simple-maintenance
 [ico-discord]: https://img.shields.io/discord/1143744619956404295?color=8c9eff&label=Discord&logo=discord
 [ico-twitter]: https://img.shields.io/twitter/follow/luchaveztech
