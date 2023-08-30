@@ -52,7 +52,7 @@ MIT. Please see the [license file](license.md) for more information.
 [link-packagist]: https://packagist.org/packages/luchavez/simple-maintenance
 [link-downloads]: https://packagist.org/packages/luchavez/simple-maintenance
 [link-stars]: https://github.com/luchavez-technologies/simple-maintenance
-[link-discord]: https://discord.gg/bFpDTgp3
+[link-discord]: https://discord.gg/MBxxAkQAxx
 [link-twitter]: https://twitter.com/luchaveztech
 
 [link-author]: https://github.com/luchavez-technologies
