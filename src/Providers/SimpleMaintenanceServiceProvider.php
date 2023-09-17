@@ -26,7 +26,7 @@ class SimpleMaintenanceServiceProvider extends ServiceProvider implements Provid
     /**
      * @var string|null
      */
-    protected string|null $route_prefix = null;
+    protected ?string $route_prefix = null;
 
     /**
      * @var bool

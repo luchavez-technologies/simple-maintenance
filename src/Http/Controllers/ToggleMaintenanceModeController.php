@@ -3,9 +3,9 @@
 namespace Luchavez\SimpleMaintenance\Http\Controllers;
 
 use App\Http\Controllers\Controller;
+use Illuminate\Http\JsonResponse;
 use Luchavez\SimpleMaintenance\Http\Requests\ToggleMaintenanceModeRequest;
 use Luchavez\SimpleMaintenance\Repositories\MaintenanceLogRepository;
-use Illuminate\Http\JsonResponse;
 
 /**
  * Class ToggleMaintenanceModeController

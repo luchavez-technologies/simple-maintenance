@@ -2,13 +2,13 @@
 
 namespace Luchavez\SimpleMaintenance\Jobs;
 
-use Luchavez\SimpleMaintenance\Events\MaintenanceToggleScheduledEvent;
-use Luchavez\SimpleMaintenance\Models\MaintenanceLog;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Bus\Dispatchable;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Queue\SerializesModels;
+use Luchavez\SimpleMaintenance\Events\MaintenanceToggleScheduledEvent;
+use Luchavez\SimpleMaintenance\Models\MaintenanceLog;
 
 /**
  * Class AnnounceMaintenanceToggleJob

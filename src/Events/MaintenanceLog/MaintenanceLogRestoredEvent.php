@@ -2,14 +2,13 @@
 
 namespace Luchavez\SimpleMaintenance\Events\MaintenanceLog;
 
-use Luchavez\SimpleMaintenance\Models\MaintenanceLog;
 use Illuminate\Broadcasting\Channel;
 use Illuminate\Broadcasting\InteractsWithSockets;
 use Illuminate\Broadcasting\PrivateChannel;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Foundation\Events\Dispatchable;
-// Model
 use Illuminate\Queue\SerializesModels;
+use Luchavez\SimpleMaintenance\Models\MaintenanceLog;
 
 /**
  * Class MaintenanceLogRestoredEvent

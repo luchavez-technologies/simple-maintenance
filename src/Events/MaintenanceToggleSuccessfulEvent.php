@@ -2,10 +2,10 @@
 
 namespace Luchavez\SimpleMaintenance\Events;
 
-use Luchavez\SimpleMaintenance\Models\MaintenanceLog;
 use Illuminate\Broadcasting\InteractsWithSockets;
 use Illuminate\Foundation\Events\Dispatchable;
 use Illuminate\Queue\SerializesModels;
+use Luchavez\SimpleMaintenance\Models\MaintenanceLog;
 
 /**
  * Class MaintenanceToggleSuccessfulEvent

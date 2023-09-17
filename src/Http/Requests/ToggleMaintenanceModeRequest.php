@@ -2,7 +2,7 @@
 
 namespace Luchavez\SimpleMaintenance\Http\Requests;
 
-use Luchavez\StarterKit\Requests\FormRequest;
+use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Str;
 

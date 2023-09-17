@@ -5,16 +5,16 @@ namespace Luchavez\SimpleMaintenance\Repositories;
 use Carbon\Carbon;
 use DateInterval;
 use DateTimeInterface;
+use Illuminate\Auth\Access\AuthorizationException;
+use Illuminate\Database\Eloquent\Collection;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Foundation\Http\FormRequest;
 use Luchavez\SimpleMaintenance\DataFactories\MaintenanceLogDataFactory;
 use Luchavez\SimpleMaintenance\Http\Requests\MaintenanceLog\UpdateMaintenanceLogRequest;
 use Luchavez\SimpleMaintenance\Jobs\AnnounceMaintenanceToggleJob;
 use Luchavez\SimpleMaintenance\Jobs\ToggleMaintenanceModeJob;
 use Luchavez\SimpleMaintenance\Models\MaintenanceLog;
 use Luchavez\StarterKit\Abstracts\BaseRepository;
-use Luchavez\StarterKit\Exceptions\UnauthorizedException;
-use Illuminate\Database\Eloquent\Collection;
-use Illuminate\Database\Eloquent\Model;
-use Illuminate\Foundation\Http\FormRequest;
 
 /**
  * Class MaintenanceLogRepository
@@ -65,14 +65,14 @@ class MaintenanceLogRepository extends BaseRepository
      * @param  mixed|null  $attributes
      * @return Model|Collection|array|null
      *
-     * @throws UnauthorizedException
+     * @throws AuthorizationException
      */
     public function delete(Model|int|array|string $id = null, mixed $attributes = null): Model|Collection|array|null
     {
         if ($id instanceof MaintenanceLog) {
             // Throw error if the log has already been executed.
             if (! $id->isPending() && $id->isFinished()) {
-                throw new UnauthorizedException('Failed to delete maintenance log as it has already executed.');
+                throw new AuthorizationException('Failed to delete maintenance log as it has already executed.');
             }
 
             // Cancel pending maintenance log.

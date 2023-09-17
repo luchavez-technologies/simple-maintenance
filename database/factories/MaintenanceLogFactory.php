@@ -2,9 +2,8 @@
 
 namespace Luchavez\SimpleMaintenance\Database\Factories;
 
-// Model
-use Luchavez\SimpleMaintenance\Models\MaintenanceLog;
 use Illuminate\Database\Eloquent\Factories\Factory;
+use Luchavez\SimpleMaintenance\Models\MaintenanceLog;
 
 /**
  * Class MaintenanceLog

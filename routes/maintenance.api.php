@@ -1,11 +1,11 @@
 <?php
 
+use Illuminate\Support\Facades\Route;
 use Luchavez\SimpleMaintenance\Http\Controllers\GetMaintenanceModeStatusController;
 use Luchavez\SimpleMaintenance\Http\Controllers\GetMaintenanceModeStatusesController;
 use Luchavez\SimpleMaintenance\Http\Controllers\GetMaintenanceModeTagsController;
 use Luchavez\SimpleMaintenance\Http\Controllers\MaintenanceLogController;
 use Luchavez\SimpleMaintenance\Http\Controllers\ToggleMaintenanceModeController;
-use Illuminate\Support\Facades\Route;
 
 /**
  * @author James Carlo Luchavez <jamescarloluchavez@gmail.com>
