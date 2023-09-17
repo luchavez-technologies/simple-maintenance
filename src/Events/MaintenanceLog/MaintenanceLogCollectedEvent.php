@@ -2,13 +2,12 @@
 
 namespace Luchavez\SimpleMaintenance\Events\MaintenanceLog;
 
-use Luchavez\SimpleMaintenance\Models\MaintenanceLog;
 use Illuminate\Broadcasting\InteractsWithSockets;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Foundation\Events\Dispatchable;
 use Illuminate\Pagination\LengthAwarePaginator;
-// Model
 use Illuminate\Queue\SerializesModels;
+use Luchavez\SimpleMaintenance\Models\MaintenanceLog;
 
 /**
  * Class MaintenanceLogCollectedEvent

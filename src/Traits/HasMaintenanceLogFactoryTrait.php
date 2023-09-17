@@ -2,9 +2,9 @@
 
 namespace Luchavez\SimpleMaintenance\Traits;
 
-use Luchavez\SimpleMaintenance\Database\Factories\MaintenanceLogFactory;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Luchavez\SimpleMaintenance\Database\Factories\MaintenanceLogFactory;
 
 /**
  * Trait HasMaintenanceLogFactoryTrait

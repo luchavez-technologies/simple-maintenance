@@ -93,7 +93,7 @@ class SimpleMaintenance
     /**
      * @return string|null
      */
-    public function getStatusMiddleware(): string|null
+    public function getStatusMiddleware(): ?string
     {
         return config('simple-maintenance.middlewares.status');
     }

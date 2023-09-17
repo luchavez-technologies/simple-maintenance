@@ -2,11 +2,10 @@
 
 namespace Luchavez\SimpleMaintenance\DataFactories;
 
-use Luchavez\SimpleMaintenance\Models\MaintenanceLog;
-use Luchavez\StarterKit\Abstracts\BaseDataFactory;
-// Model
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Carbon;
+use Luchavez\SimpleMaintenance\Models\MaintenanceLog;
+use Luchavez\StarterKit\Abstracts\BaseDataFactory;
 
 /**
  * Class MaintenanceLogDataFactory
@@ -23,22 +22,22 @@ class MaintenanceLogDataFactory extends BaseDataFactory
     /**
      * @var string|null
      */
-    public string|null $title = null;
+    public ?string $title = null;
 
     /**
      * @var string|null
      */
-    public string|null $description = null;
+    public ?string $description = null;
 
     /**
      * @var string|null
      */
-    public string|null $secret = null;
+    public ?string $secret = null;
 
     /**
      * @var Carbon|null
      */
-    public Carbon|null $scheduled_at = null;
+    public ?Carbon $scheduled_at = null;
 
     /**
      * @return Builder

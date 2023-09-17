@@ -3,23 +3,21 @@
 namespace Luchavez\SimpleMaintenance\Http\Controllers;
 
 use App\Http\Controllers\Controller;
+use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Http\JsonResponse;
 use Luchavez\SimpleMaintenance\Events\MaintenanceLog\MaintenanceLogArchivedEvent;
 use Luchavez\SimpleMaintenance\Events\MaintenanceLog\MaintenanceLogCollectedEvent;
-// Requests
 use Luchavez\SimpleMaintenance\Events\MaintenanceLog\MaintenanceLogRestoredEvent;
 use Luchavez\SimpleMaintenance\Events\MaintenanceLog\MaintenanceLogShownEvent;
 use Luchavez\SimpleMaintenance\Events\MaintenanceLog\MaintenanceLogUpdatedEvent;
 use Luchavez\SimpleMaintenance\Http\Requests\MaintenanceLog\DeleteMaintenanceLogRequest;
 use Luchavez\SimpleMaintenance\Http\Requests\MaintenanceLog\IndexMaintenanceLogRequest;
 use Luchavez\SimpleMaintenance\Http\Requests\MaintenanceLog\RestoreMaintenanceLogRequest;
-// Events
 use Luchavez\SimpleMaintenance\Http\Requests\MaintenanceLog\ShowMaintenanceLogRequest;
 use Luchavez\SimpleMaintenance\Http\Requests\MaintenanceLog\UpdateMaintenanceLogRequest;
 use Luchavez\SimpleMaintenance\Models\MaintenanceLog;
 use Luchavez\SimpleMaintenance\Repositories\MaintenanceLogRepository;
 use Luchavez\StarterKit\Exceptions\UnauthorizedException;
-use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Http\JsonResponse;
 use Spatie\QueryBuilder\AllowedFilter;
 
 /**

@@ -3,10 +3,10 @@
 namespace Luchavez\SimpleMaintenance\Http\Controllers;
 
 use App\Http\Controllers\Controller;
-use Luchavez\SimpleMaintenance\Repositories\MaintenanceLogRepository;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
+use Luchavez\SimpleMaintenance\Repositories\MaintenanceLogRepository;
 
 /**
  * Class GetMaintenanceModeStatusController

@@ -2,12 +2,12 @@
 
 namespace Luchavez\SimpleMaintenance\Models;
 
-use Luchavez\SimpleMaintenance\Traits\HasMaintenanceLogFactoryTrait;
-use Luchavez\StarterKit\Traits\ModelOwnedTrait;
-use Luchavez\StarterKit\Traits\UsesUUIDTrait;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
+use Luchavez\SimpleMaintenance\Traits\HasMaintenanceLogFactoryTrait;
+use Luchavez\StarterKit\Traits\ModelOwnedTrait;
+use Luchavez\StarterKit\Traits\UsesUUIDTrait;
 use Spatie\Tags\HasTags;
 
 /**
